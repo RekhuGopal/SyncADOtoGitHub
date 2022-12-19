@@ -14,9 +14,9 @@ $destination = $githubDir+"\"+ $AzureRepoName+".git"
 #please provide your username
 $alias = $GitHubUserName+":"+ "$($GitHubDestinationPAT)"
 #Please make sure, you remove https from azure-repo-clone-url
-$sourceURL = "https://$($ADOSourcePAT)@$($ADOSourcePAT)"
+$sourceURL = "https://$($ADOSourcePAT)"+"@"+"$($ADOCloneURL)"
 #Please make sure, you remove https from github-repo-clone-url
-$destURL = "https://" + $alias + "@$($GitHubCloneURL)"
+$destURL = "https://" + $alias +"@"+"$($GitHubCloneURL)"
 #Check if the parent directory exists and delete
 if((Test-Path -path $githubDir))
 {
