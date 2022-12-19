@@ -10,4 +10,4 @@ jobs:
       - name: Check out repo        
         uses: actions/checkout@v2
       - run: |
-          ./ADOtoGitHubSync.ps1
+          ./SynADOtoGitHub.ps1
