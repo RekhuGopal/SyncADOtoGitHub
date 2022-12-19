@@ -1,0 +1,13 @@
+name: Run ADO to GitHub Sync with PowerShell
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: windows-2019
+    steps:
+      - name: Check out repo        
+        uses: actions/checkout@v2
+      - run: |
+          ./ADOtoGitHubSync.ps1
