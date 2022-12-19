@@ -6,8 +6,8 @@ $AzureRepoName = "Docker"
 $GitHubDestinationPAT = "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"
 $ADOSourcePAT = "lwchver7hsb5ckqjc72edxglhg2eqp2ewwgmn3irywiwkasapaeq"
 $GitHubUserName = "RekhuGopal"
-$ADOCloneURL = "https://CloudQuickLabs@dev.azure.com/CloudQuickLabs/DockerImageAzureWebApp/_git/Docker"
-$GitHubCloneURL = "https://github.com/RekhuGopal/SyncADOtoGitHub.git"
+$ADOCloneURL = "CloudQuickLabs@dev.azure.com/CloudQuickLabs/DockerImageAzureWebApp/_git/Docker"
+$GitHubCloneURL = "github.com/RekhuGopal/SyncADOtoGitHub.git"
 $stageDir = pwd | Split-Path
 $destination = $stageDir+"\"+ $AzureRepoName+".git"
 #please provide your username
