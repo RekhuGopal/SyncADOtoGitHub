@@ -11,12 +11,16 @@ $GitHubCloneURL = "github.com/RekhuGopal/SyncADOtoGitHub.git"
 $stageDir = pwd | Split-Path
 $githubDir = $stageDir +"\"+"gitHub"
 $destination = $githubDir+"\"+ $AzureRepoName+".git"
+write-host "Destination : $destination"
 #please provide your username
 $alias = $GitHubUserName+":"+ "$($GitHubDestinationPAT)"
+write-host "Alias : $alias"
 #Please make sure, you remove https from azure-repo-clone-url
 $sourceURL = "https://$($ADOSourcePAT)"+"@"+"$($ADOCloneURL)"
+write-host "source URL : $sourceURL"
 #Please make sure, you remove https from github-repo-clone-url
 $destURL = "https://" + $alias +"@"+"$($GitHubCloneURL)"
+write-host "dest URL : $destURL"
 #Check if the parent directory exists and delete
 if((Test-Path -path $githubDir))
 {
