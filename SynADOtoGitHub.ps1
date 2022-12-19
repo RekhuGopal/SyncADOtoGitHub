@@ -9,7 +9,8 @@ $GitHubUserName = "RekhuGopal"
 $ADOCloneURL = "CloudQuickLabs@dev.azure.com/CloudQuickLabs/DockerImageAzureWebApp/_git/Docker"
 $GitHubCloneURL = "github.com/RekhuGopal/SyncADOtoGitHub.git"
 $stageDir = pwd | Split-Path
-$destination = $stageDir+"\"+ $AzureRepoName+".git"
+$githubDir = $stageDir +"\"+"gitHub"
+$destination = $githubDir+"\"+ $AzureRepoName+".git"
 #please provide your username
 $alias = $GitHubUserName+":"+ "$($GitHubDestinationPAT)"
 #Please make sure, you remove https from azure-repo-clone-url
