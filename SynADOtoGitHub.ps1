@@ -51,3 +51,4 @@ if((Test-Path -path $githubDir))
 {
  Remove-Item -Path $githubDir -Recurse -force
 }
+write-host "Job completed"
