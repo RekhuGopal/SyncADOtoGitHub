@@ -19,7 +19,7 @@ write-host "Alias : $alias"
 $sourceURL = "https://$($ADOSourcePAT)"+"@"+"$($ADOCloneURL)"
 write-host "source URL : $sourceURL"
 #Please make sure, you remove https from github-repo-clone-url
-$destURL = "https://" + $alias +"@"+"$($GitHubCloneURL)"
+$destURL = "https://" + $($GitHubDestinationPAT) +"@"+"$($GitHubCloneURL)"
 write-host "dest URL : $destURL"
 #Check if the parent directory exists and delete
 if((Test-Path -path $githubDir))
