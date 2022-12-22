@@ -4,7 +4,7 @@ Write-Host ' reflect Azure Devops repo changes to GitHub repo'
 Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - - '
 $AzureRepoName = "Docker"
 Write-Host "AzureRepoName: $AzureRepoName"
-$GitHubDestinationPAT = "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"
+$GitHubDestinationPAT = "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"
 $ADOSourcePAT = "bqwxq7gpmchm3hw6qti3gfywqr3mf2iqw7ufqv5np5ws4xadcp6a"
 $GitHubUserName = "RekhuGopal"
 $ADOCloneURL = "dev.azure.com/CloudQuickLabs/DockerImageAzureWebApp/_git/Docker"
