@@ -1,11 +1,17 @@
+param(
+     [Parameter()]
+     [string]$GitHubDestinationPAT,
+ 
+     [Parameter()]
+     [string]$ADOSourcePAT
+ )
+
 # Write your PowerShell commands here.
 Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - -'
 Write-Host ' reflect Azure Devops repo changes to GitHub repo'
 Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - - '
 $AzureRepoName = "Docker"
 Write-Host "AzureRepoName: $AzureRepoName"
-$GitHubDestinationPAT = "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"
-$ADOSourcePAT = "bqwxq7gpmchm3hw6qti3gfywqr3mf2iqw7ufqv5np5ws4xadcp6a"
 $GitHubUserName = "RekhuGopal"
 $ADOCloneURL = "dev.azure.com/CloudQuickLabs/DockerImageAzureWebApp/_git/Docker"
 $GitHubCloneURL = "github.com/RekhuGopal/Docker.git"
