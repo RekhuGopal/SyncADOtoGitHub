@@ -12,7 +12,6 @@ Write-Host ' reflect Azure Devops repo changes to GitHub repo'
 Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - - '
 $AzureRepoName = "Docker"
 Write-Host "AzureRepoName: $AzureRepoName"
-$GitHubUserName = "RekhuGopal"
 $ADOCloneURL = "dev.azure.com/CloudQuickLabs/DockerImageAzureWebApp/_git/Docker"
 $GitHubCloneURL = "github.com/RekhuGopal/Docker.git"
 $stageDir = pwd | Split-Path
@@ -21,15 +20,11 @@ $githubDir = $stageDir +"\"+"gitHub"
 Write-Host "github Dir : $githubDir"
 $destination = $githubDir+"\"+ $AzureRepoName+".git"
 Write-Host "destination: $destination"
-#please provide your username
-$alias = $GitHubUserName+":"+ "$($GitHubDestinationPAT)"
-write-host "Alias : $alias"
 #Please make sure, you remove https from azure-repo-clone-url
 $sourceURL = "https://$($ADOSourcePAT)"+"@"+"$($ADOCloneURL)"
 write-host "source URL : $sourceURL"
 #Please make sure, you remove https from github-repo-clone-url
 $destURL = "https://" + $($GitHubDestinationPAT) +"@"+"$($GitHubCloneURL)"
-$destURLSetURL = "https://" + $($alias) +"@"+"$($GitHubCloneURL)"
 write-host "dest URL : $destURL"
 #Check if the parent directory exists and delete
 if((Test-Path -path $githubDir))
