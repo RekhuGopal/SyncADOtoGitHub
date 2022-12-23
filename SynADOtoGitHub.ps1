@@ -10,7 +10,7 @@ param(
 Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - -'
 Write-Host ' reflect Azure Devops repo changes to GitHub repo'
 Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - - '
-$AzureRepoName = "Docker"
+$AzureRepoName = "CloudQuickLabsADO"
 Write-Host "AzureRepoName: $AzureRepoName"
 $ADOCloneURL = "dev.azure.com/CloudQuickLabs/CloudQuickLabsADO/_git/CloudQuickLabsADO"
 $GitHubCloneURL = "github.com/RekhuGopal/CloudQuickLabsADO.git"
