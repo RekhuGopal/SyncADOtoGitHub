@@ -12,8 +12,8 @@ Write-Host ' reflect Azure Devops repo changes to GitHub repo'
 Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - - '
 $AzureRepoName = "Docker"
 Write-Host "AzureRepoName: $AzureRepoName"
-$ADOCloneURL = "dev.azure.com/CloudQuickLabs/DockerImageAzureWebApp/_git/Docker"
-$GitHubCloneURL = "github.com/RekhuGopal/Docker.git"
+$ADOCloneURL = "dev.azure.com/CloudQuickLabs/CloudQuickLabsADO/_git/CloudQuickLabsADO"
+$GitHubCloneURL = "github.com/RekhuGopal/CloudQuickLabsADO.git"
 $stageDir = pwd | Split-Path
 Write-Host "stage Dir is : $stageDir"
 $githubDir = $stageDir +"\"+"gitHub"
