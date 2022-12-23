@@ -10,4 +10,4 @@ jobs:
       - name: Check out repo        
         uses: actions/checkout@v2
       - run: |
-          ./SynADOtoGitHub.ps1
+          ./SynADOtoGitHub.ps1 -GitHubDestinationPAT {{ secret.GITHUBDESTINATIONPAT }} -ADOSourcePAT {{ secret.ADOSOURCEPAT }}
