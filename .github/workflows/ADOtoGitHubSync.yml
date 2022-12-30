@@ -10,4 +10,7 @@ jobs:
       - name: Check out repo        
         uses: actions/checkout@v2
       - run: |
-          ./SynADOtoGitHub.ps1 -GitHubDestinationPAT ${{ secrets.GITHUBDESTINATIONPAT }} -ADOSourcePAT ${{ secrets.ADOSOURCEPAT }} -AzureRepoName "CloudQuickLabsADO"  -ADOCloneURL "dev.azure.com/CloudQuickLabs/CloudQuickLabsADO/_git/CloudQuickLabsADO"  -GitHubCloneURL "github.com/RekhuGopal/CloudQuickLabsADO.git"    
+           $ListObject = GC -Path "./ADORepoList.json" | ConvertFrom-Json
+           foreach ($object in $ListObject.RepoList){
+             ./SynADOtoGitHub.ps1 -GitHubDestinationPAT ${{ secrets.GITHUBDESTINATIONPAT }} -ADOSourcePAT ${{ secrets.ADOSOURCEPAT }} -AzureRepoName $($object.AzureRepoName)  -ADOCloneURL $($object.ADOCloneURL)  -GitHubCloneURL  $($object.GitHubCloneURL) 
+           }
