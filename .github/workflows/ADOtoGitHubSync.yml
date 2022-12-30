@@ -10,4 +10,4 @@ jobs:
       - name: Check out repo        
         uses: actions/checkout@v2
       - run: |
-          ./SynADOtoGitHub.ps1 -GitHubDestinationPAT ${{ secrets.GITHUBDESTINATIONPAT }} -ADOSourcePAT ${{ secrets.ADOSOURCEPAT }}
+          ./SynADOtoGitHub.ps1 -GitHubDestinationPAT ${{ secrets.GITHUBDESTINATIONPAT }} -ADOSourcePAT ${{ secrets.ADOSOURCEPAT }} -AzureRepoName "CloudQuickLabsADO"  -ADOCloneURL "dev.azure.com/CloudQuickLabs/CloudQuickLabsADO/_git/CloudQuickLabsADO"  -GitHubCloneURL "github.com/RekhuGopal/CloudQuickLabsADO.git"    
