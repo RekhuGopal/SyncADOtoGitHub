@@ -3,7 +3,16 @@ param(
      [string]$GitHubDestinationPAT,
  
      [Parameter()]
-     [string]$ADOSourcePAT
+     [string]$ADOSourcePAT,
+     
+     [Parameter()]
+     [string]$AzureRepoName,
+     
+     [Parameter()]
+     [string]$ADOCloneURL,
+     
+     [Parameter()]
+     [string]$GitHubCloneURL
  )
 
 # Write your PowerShell commands here.
