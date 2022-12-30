@@ -1,0 +1,12 @@
+{
+    "RepoList" : [{
+        "AzureRepoName":"CloudQuickLabsADO",
+        "ADOCloneURL":"dev.azure.com/CloudQuickLabs/CloudQuickLabsADO/_git/CloudQuickLabsADO",
+         "GitHubCloneURL":"github.com/RekhuGopal/CloudQuickLabsADO.git"
+    },
+    {
+        "AzureRepoName":"Docker",
+        "ADOCloneURL":"dev.azure.com/CloudQuickLabs/DockerImageAzureWebApp/_git/Docker",
+         "GitHubCloneURL":"github.com/RekhuGopal/Docker.git"
+    }]
+}
