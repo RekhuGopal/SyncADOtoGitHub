@@ -1,4 +1,4 @@
-name: Run ADO to GitHub Sync with PowerShell
+name: Run ADO to GitHub Sync with PowerShell Original
 
 on:
   workflow_dispatch:
